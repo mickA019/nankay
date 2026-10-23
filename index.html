@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NANKAY - Arte en Cemento</title>
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome (Iconos) -->
@@ -12,14 +13,14 @@
 
 <body class="bg-light text-secondary">
 
-    <!-- 1. HEADER / ENCABEZADO -->
+    <!-- 1. ENCABEZADO / HEADER -->
     <header class="bg-white shadow-sm sticky-top">
         <div class="container py-3">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-12 col-md-auto mb-2 mb-md-0 d-flex justify-content-center">
+            <div class="row align-items-center">
+                <div class="col-auto">
                     <img src="images/loog_nankay.jpg" alt="Logo Nankay" class="rounded-circle shadow-sm border border-2 border-warning" style="width: 75px; height: 75px; object-fit: cover;">
                 </div>
-                <div class="col-12 col-md">
+                <div class="col">
                     <h1 class="h3 fw-bold text-dark m-0">NANKAY</h1>
                     <p class="small text-muted m-0">Tu lo imaginas, nosotros lo solucionamos</p>
                 </div>
@@ -30,11 +31,11 @@
     <main class="container py-4">
 
         <!-- 2. BANNER PRINCIPAL -->
-        <div class="mb-5">
+        <section class="mb-5">
             <div class="ratio ratio-21x9 rounded-4 overflow-hidden shadow">
-                <img src="images/fondo_nankay1.jpg" alt="Fondo Principal" class="w-100 object-fit-cover">
+                <img src="images/fondo_nankay1.jpg" alt="Fondo Principal Nankay" class="w-100 object-fit-cover">
             </div>
-        </div>
+        </section>
 
         <!-- TÍTULO SECCIÓN PRODUCTOS -->
         <div class="text-center mb-4">
@@ -42,183 +43,186 @@
             <div class="mx-auto bg-warning rounded" style="width: 50px; height: 3px;"></div>
         </div>
 
-        <!-- 3. MACETAS DECORATIVAS -->
-        <div class="card border-0 shadow-sm mb-3 bg-success-subtle rounded-4 overflow-hidden">
-            <div class="card-body p-4 d-flex align-items-center justify-content-between">
-                <div>
-                    <h3 class="h5 fw-bold text-dark m-0">Macetas Decorativas</h3>
-                </div>
-                <img src="images/maceta.jpg" alt="Macetas Decorativas" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
-            </div>
-        </div>
+        <!-- 3. PRODUCTOS EN ZIG-ZAG (MOBILE FIRST - COLUMNA ÚNICA) -->
+        <section class="row g-3 mb-4">
 
-        <!-- 4. VELAS ARTESANALES -->
-        <div class="card border-0 shadow-sm mb-3 bg-danger-subtle rounded-4 overflow-hidden">
-            <div class="card-body p-4 d-flex align-items-center justify-content-between flex-row-reverse text-end">
-                <div>
-                    <h3 class="h5 fw-bold text-dark m-0">Velas Artesanales</h3>
+            <!-- Producto 1: Macetas Decorativas (Texto a la izquierda, Imagen a la derecha) -->
+            <div class="col-12">
+                <div class="card border-0 shadow-sm bg-success-subtle rounded-4 overflow-hidden">
+                    <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                        <div>
+                            <h3 class="h5 fw-bold text-dark m-0">Macetas Decorativas</h3>
+                        </div>
+                        <img src="images/maceta.jpg" alt="Macetas Decorativas" class="rounded-circle flex-shrink-0 ms-3" style="width: 90px; height: 90px; object-fit: cover;">
+                    </div>
                 </div>
-                <img src="images/velas.png" alt="Velas Artesanales" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
             </div>
-        </div>
 
-        <!-- 5. RECUERDOS DE BODA Y CUMPLEAÑOS -->
-        <div class="card border-0 shadow-sm mb-3 bg-info-subtle rounded-4 overflow-hidden">
-            <div class="card-body p-4 d-flex align-items-center justify-content-between">
-                <div>
-                    <h3 class="h5 fw-bold text-dark m-0">Recuerdos de Boda y Cumpleaños</h3>
+            <!-- Producto 2: Velas Artesanales (Imagen a la izquierda, Texto a la derecha) -->
+            <div class="col-12">
+                <div class="card border-0 shadow-sm bg-danger-subtle rounded-4 overflow-hidden">
+                    <div class="card-body p-4 d-flex align-items-center justify-content-between flex-row-reverse text-end">
+                        <div>
+                            <h3 class="h5 fw-bold text-dark m-0">Velas Artesanales</h3>
+                        </div>
+                        <img src="images/velas.png" alt="Velas Artesanales" class="rounded-circle flex-shrink-0 me-3" style="width: 90px; height: 90px; object-fit: cover;">
+                    </div>
                 </div>
-                <img src="images/recuerdo_nankay.png" alt="Recuerdos" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
             </div>
-        </div>
 
-        <!-- 6. DETALLES CORPORATIVOS -->
-        <div class="card border-0 shadow-sm mb-3 bg-primary-subtle rounded-4 overflow-hidden">
-            <div class="card-body p-4 d-flex align-items-center justify-content-between flex-row-reverse text-end">
-                <div>
-                    <h3 class="h5 fw-bold text-dark m-0">Detalles Corporativos</h3>
+            <!-- Producto 3: Recuerdos de Boda y Cumpleaños -->
+            <div class="col-12">
+                <div class="card border-0 shadow-sm bg-info-subtle rounded-4 overflow-hidden">
+                    <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                        <div>
+                            <h3 class="h5 fw-bold text-dark m-0">Recuerdos de Boda y Cumpleaños</h3>
+                        </div>
+                        <img src="images/recuerdo_nankay.png" alt="Recuerdos de Boda" class="rounded-circle flex-shrink-0 ms-3" style="width: 90px; height: 90px; object-fit: cover;">
+                    </div>
                 </div>
-                <img src="images/corporativos.png" alt="Detalles Corporativos" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
             </div>
-        </div>
 
-        <!-- 7. MINI JARDINES -->
-        <div class="card border-0 shadow-sm mb-4 bg-warning-subtle rounded-4 overflow-hidden">
-            <div class="card-body p-4 d-flex align-items-center justify-content-between">
-                <div>
-                    <h3 class="h5 fw-bold text-dark m-0">Mini Jardines</h3>
+            <!-- Producto 4: Detalles Corporativos -->
+            <div class="col-12">
+                <div class="card border-0 shadow-sm bg-primary-subtle rounded-4 overflow-hidden">
+                    <div class="card-body p-4 d-flex align-items-center justify-content-between flex-row-reverse text-end">
+                        <div>
+                            <h3 class="h5 fw-bold text-dark m-0">Detalles Corporativos</h3>
+                        </div>
+                        <img src="images/corporativos.png" alt="Detalles Corporativos" class="rounded-circle flex-shrink-0 me-3" style="width: 90px; height: 90px; object-fit: cover;">
+                    </div>
                 </div>
-                <img src="images/minijardines.jpg" alt="Mini Jardines" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
             </div>
-        </div>
 
-        <!-- 8. LISTA DE SERVICIOS -->
-        <div class="card border-0 shadow-sm mb-4 rounded-4 bg-white">
+            <!-- Producto 5: Mini Jardines -->
+            <div class="col-12">
+                <div class="card border-0 shadow-sm bg-warning-subtle rounded-4 overflow-hidden">
+                    <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                        <div>
+                            <h3 class="h5 fw-bold text-dark m-0">Mini Jardines</h3>
+                        </div>
+                        <img src="images/minijardines.jpg" alt="Mini Jardines" class="rounded-circle flex-shrink-0 ms-3" style="width: 90px; height: 90px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 4. LISTA DE SERVICIOS -->
+        <section class="card border-0 shadow-sm mb-4 rounded-4 bg-white">
             <div class="card-body p-4">
                 <h3 class="h5 fw-bold text-dark text-center mb-3">Lista de Servicios</h3>
                 <ul class="list-unstyled m-0">
                     <li class="py-2 border-bottom d-flex align-items-center">
-                        <i class="fa-solid fa-circle-check text-success me-3 fs-5"></i>
-                        <span>Diseño y fabricación personalizada en cemento.</span>
+                        <i class="fa-solid fa-star text-warning me-3 fs-5"></i>
                     </li>
                     <li class="py-2 border-bottom d-flex align-items-center">
-                        <i class="fa-solid fa-circle-check text-success me-3 fs-5"></i>
-                        <span>Atención de pedidos al por mayor para eventos.</span>
+                        <i class="fa-solid fa-star text-warning me-3 fs-5"></i>
                     </li>
                     <li class="py-2 border-bottom d-flex align-items-center">
-                        <i class="fa-solid fa-circle-check text-success me-3 fs-5"></i>
-                        <span>Personalización con logotipos o etiquetas especiales.</span>
-                    </li>
-                    <li class="py-2 d-flex align-items-center">
-                        <i class="fa-solid fa-circle-check text-success me-3 fs-5"></i>
-                        <span>Envíos seguros y entregas programadas.</span>
+                        <i class="fa-solid fa-star text-warning me-3 fs-5"></i>
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
 
-        <!-- 9. GOOGLE MAPS -->
-        <div class="card border-0 shadow-sm mb-4 rounded-4 bg-white overflow-hidden">
+        <!-- 5. UBICACIÓN GOOGLE MAPS -->
+        <section class="card border-0 shadow-sm mb-4 rounded-4 bg-white overflow-hidden">
             <div class="card-body p-4 text-center">
                 <h3 class="h5 fw-bold text-dark mb-3">Nuestra Ubicación</h3>
                 <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3177719442842!2d-78.59667092550083!3d-0.9075877990836217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461bd1d43a1bb%3A0x2e0b77284ded7ca6!2sNankay%2520-%2520Arte%2520en%2520cemento!5e0!3m2!1ses-419!2sec!4v1792603629685!5m2!1ses-419!2sec" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación de Nankay"></iframe>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- 10. FORMULARIO DE CONTACTO / COTIZACIÓN -->
-        <div class="card border-0 shadow-sm mb-4 rounded-4 bg-light-subtle overflow-hidden">
-            <div class="card-body p-4 p-md-5">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto">
-                        <div class="text-center mb-4">
-                            <h2 class="fw-bold h3 text-dark">¿Interesado en nuestros productos?</h2>
-                            <p class="text-secondary fs-6">Completa esta breve encuesta para ayudarte a cotizar y crear el detalle ideal para tu evento u hogar.</p>
-                        </div>
-
-                        <form class="bg-white p-4 p-md-5 rounded-4 shadow-sm border border-light-subtle">
-                            <!-- Datos de Contacto -->
-                            <div class="row g-3 mb-3">
-                                <div class="col-md-6">
-                                    <label for="nombre" class="form-label fw-semibold text-dark">Nombre Completo *</label>
-                                    <input type="text" class="form-control bg-light" id="nombre" placeholder="Tu nombre" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="telefono" class="form-label fw-semibold text-dark">Teléfono / WhatsApp *</label>
-                                    <input type="tel" class="form-control bg-light" id="telefono" placeholder="Ej. 0991234567" required>
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="correo" class="form-label fw-semibold text-dark">Correo Electrónico *</label>
-                                <input type="email" class="form-control bg-light" id="correo" placeholder="ejemplo@correo.com" required>
-                            </div>
-
-                            <!-- Tipo de Producto de Interés -->
-                            <div class="mb-4">
-                                <label class="form-label fw-semibold text-dark d-block">¿Qué productos te interesan? (Puedes marcar varios)</label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="prodRecuerdos" value="recuerdos">
-                                    <label class="form-check-label" for="prodRecuerdos">Souvenirs / Recuerdos vivos</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="prodMacetas" value="macetas">
-                                    <label class="form-check-label" for="prodMacetas">Macetas artesanales</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="prodPlantas" value="plantas">
-                                    <label class="form-check-label" for="prodPlantas">Plantas y Suculentas</label>
-                                </div>
-                            </div>
-
-                            <!-- Tipo de Evento -->
-                            <div class="mb-4">
-                                <label for="tipoEvento" class="form-label fw-semibold text-dark">¿Para qué ocasión necesitas tus productos?</label>
-                                <select class="form-select bg-light" id="tipoEvento">
-                                    <option selected disabled>Selecciona una opción...</option>
-                                    <option value="boda">Boda / Matrimonio</option>
-                                    <option value="bautizo">Bautizo / Primera Comunión</option>
-                                    <option value="cumpleanos">Cumpleaños / Aniversario</option>
-                                    <option value="corporativo">Evento Corporativo / Empresa</option>
-                                    <option value="hogar">Decoración para el Hogar / Uso Personal</option>
-                                    <option value="otro">Otro</option>
-                                </select>
-                            </div>
-
-                            <!-- Cantidad Estimada -->
-                            <div class="mb-4">
-                                <label for="cantidad" class="form-label fw-semibold text-dark">Cantidad aproximada que necesitas</label>
-                                <select class="form-select bg-light" id="cantidad">
-                                    <option selected disabled>Selecciona un rango...</option>
-                                    <option value="1-10">1 a 10 unidades</option>
-                                    <option value="11-50">11 a 50 unidades</option>
-                                    <option value="51-100">51 a 100 unidades</option>
-                                    <option value="100+">Más de 100 unidades</option>
-                                </select>
-                            </div>
-
-                            <!-- Detalles Adicionales -->
-                            <div class="mb-4">
-                                <label for="mensaje" class="form-label fw-semibold text-dark">Detalles o requerimientos especiales</label>
-                                <textarea class="form-control bg-light" id="mensaje" rows="3" placeholder="Ej. Fecha del evento, colores preferidos, personalizado con etiquetas, etc."></textarea>
-                            </div>
-
-                            <!-- Botón de Envío -->
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-warning btn-lg px-5 text-dark fw-bold shadow-sm">
-                                    <i class="fa-solid fa-paper-plane me-2"></i>Enviar
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+        <!-- 6. FORMULARIO DE COTIZACIÓN -->
+        <section class="card border-0 shadow-sm mb-4 rounded-4 bg-light-subtle overflow-hidden">
+            <div class="card-body p-4">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold h3 text-dark">¿Interesado en nuestros productos?</h2>
+                    <p class="text-secondary fs-6">Completa esta breve encuesta para ayudarte a cotizar y crear el detalle ideal para tu evento u hogar.</p>
                 </div>
+
+                <form class="bg-white p-4 rounded-4 shadow-sm border border-light-subtle">
+                    <!-- Datos de Contacto -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label fw-semibold text-dark">Nombre Completo *</label>
+                        <input type="text" class="form-control bg-light" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label fw-semibold text-dark">Teléfono / WhatsApp *</label>
+                        <input type="tel" class="form-control bg-light" id="telefono" placeholder="Ej. 0991234567" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="correo" class="form-label fw-semibold text-dark">Correo Electrónico *</label>
+                        <input type="email" class="form-control bg-light" id="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <!-- Tipo de Producto de Interés -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold text-dark d-block">¿Qué productos te interesan?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="prodRecuerdos" value="recuerdos">
+                            <label class="form-check-label" for="prodRecuerdos">Souvenirs / Recuerdos vivos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="prodMacetas" value="macetas">
+                            <label class="form-check-label" for="prodMacetas">Macetas artesanales</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="prodPlantas" value="plantas">
+                            <label class="form-check-label" for="prodPlantas">Plantas y Suculentas</label>
+                        </div>
+                    </div>
+
+                    <!-- Tipo de Evento -->
+                    <div class="mb-4">
+                        <label for="tipoEvento" class="form-label fw-semibold text-dark">¿Para qué ocasión necesitas tus productos?</label>
+                        <select class="form-select bg-light" id="tipoEvento">
+                            <option selected disabled>Selecciona una opción...</option>
+                            <option value="boda">Boda / Matrimonio</option>
+                            <option value="bautizo">Bautizo / Primera Comunión</option>
+                            <option value="cumpleanos">Cumpleaños / Aniversario</option>
+                            <option value="corporativo">Evento Corporativo / Empresa</option>
+                            <option value="hogar">Decoración para el Hogar / Uso Personal</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <!-- Cantidad Estimada -->
+                    <div class="mb-4">
+                        <label for="cantidad" class="form-label fw-semibold text-dark">Cantidad aproximada que necesitas</label>
+                        <select class="form-select bg-light" id="cantidad">
+                            <option selected disabled>Selecciona un rango...</option>
+                            <option value="1-10">1 a 10 unidades</option>
+                            <option value="11-50">11 a 50 unidades</option>
+                            <option value="51-100">51 a 100 unidades</option>
+                            <option value="100+">Más de 100 unidades</option>
+                        </select>
+                    </div>
+
+                    <!-- Detalles Adicionales -->
+                    <div class="mb-4">
+                        <label for="mensaje" class="form-label fw-semibold text-dark">Detalles o requerimientos especiales</label>
+                        <textarea class="form-control bg-light" id="mensaje" rows="3" placeholder="Ej. Fecha del evento, colores preferidos, personalizado con etiquetas, etc."></textarea>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-warning btn-lg w-100 text-dark fw-bold shadow-sm">
+                            <i class="fa-solid fa-paper-plane me-2"></i>Enviar Cotización
+                        </button>
+                    </div>
+                </form>
             </div>
-        </div>
+        </section>
 
     </main>
 
-    <!-- 11. CONTACTOS Y REDES SOCIALES -->
+    <!-- 7. CONTACTOS Y REDES SOCIALES -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <h4 class="h6 fw-bold text-uppercase mb-3">Contáctanos y Visítanos</h4>
@@ -226,11 +230,13 @@
                 <a href="https://www.facebook.com/nankayec" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-white bg-secondary bg-opacity-25 p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/nankayec/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white bg-secondary bg-opacity-25 p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/593978696410" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="text-white bg-secondary bg-opacity-25 p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.tiktok.com/@nankayec?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="text-white bg-secondary bg-opacity-25 p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.tiktok.com/@nankayec" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="text-white bg-secondary bg-opacity-25 p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-tiktok"></i></a>
             </div>
             <p class="small text-white-50 mb-0">&copy; 2026 Nankay.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
